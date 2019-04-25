@@ -1,0 +1,20 @@
+# Nmap 7.70 scan initiated Mon Apr 15 11:20:22 2019 as: nmap -sV -sS -oN redcrossnmap.txt 10.10.10.113
+Nmap scan report for intra.redcross.htb (10.10.10.113)
+Host is up (0.069s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         vsftpd 2.0.8 or later
+22/tcp   open  ssh         OpenSSH 7.4p1 Debian 10+deb9u3 (protocol 2.0)
+80/tcp   open  http        Apache httpd 2.4.25
+443/tcp  open  ssl/http    Apache httpd 2.4.25
+1025/tcp open  NFS-or-IIS?
+5432/tcp open  postgresql  PostgreSQL DB 9.6.0 or later
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port5432-TCP:V=7.70%I=7%D=4/15%Time=5CB44CDF%P=x86_64-pc-linux-gnu%r(SM
+SF:BProgNeg,8C,"E\0\0\0\x8bSFATAL\0VFATAL\0C0A000\0Munsupported\x20fronten
+SF:d\x20protocol\x2065363\.19778:\x20server\x20supports\x201\.0\x20to\x203
+SF:\.0\0Fpostmaster\.c\0L2030\0RProcessStartupPacket\0\0");
+Service Info: Hosts: RedCross, redcross.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr 15 11:23:04 2019 -- 1 IP address (1 host up) scanned in 162.16 seconds
